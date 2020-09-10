@@ -20,6 +20,7 @@ struct RMQ {
         }
     }
 
+
     T query(int a,int b){
         return query_sub(a,b,0,0,n);
     }
@@ -35,4 +36,6 @@ struct RMQ {
             return min(vl, vr);
         }
     }
+
+
 }
