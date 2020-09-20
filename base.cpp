@@ -1,9 +1,13 @@
 #include <bits/stdc++.h>
 #define rep(i,n) for(int i=0;i<(int)n;++i)
 #define REP(i,a,b) for(int i=int(a);i<(int)b;++i)
-#define Graph vector<vecctor<ll>>
-#define pairs vector<pair<ll,ll>>
+#define vi vector<int>
+#define vvi vector<vector<int>>
+#define vl vector<ll>
+#define vvl vector<vecctor<ll>>
+#define vp vector<pair<ll,ll>>
 #define pb push_back
+#define all(v) v.begin(),v.end()
 
 
 
