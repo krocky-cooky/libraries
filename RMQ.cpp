@@ -7,7 +7,7 @@ struct RMQ {
     int n;
     bool flag; //最大値でtrue
     vector<T> dat;
-    RMQ(int n_,bool flag_ = true) : n(),flag(flag_), dat(n_ * 4,INF){
+    RMQ(int n_,bool flag_ = true) : n(),flag(flag_), dat(n_ * 4,flag_ ? 0 : INF){
         int x = 1;
         while(n_ > x){
             x *= 2;
