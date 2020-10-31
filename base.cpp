@@ -14,6 +14,7 @@
 using namespace std;
 using ll = long long;
 const ll INF = 1e18;
+const ll mod = 1e9 + 7;
 const double PI = acos(-1);
 
 template<class T> inline bool chmin(T& a, T b) {
@@ -32,15 +33,25 @@ template<class T> inline bool chmax(T& a, T b) {
 }
 
 
+ll modpow(ll a,ll b){
+    if(b == 0){
+        return 1;
+    }
+    if(b%2 == 0){
+        ll tmp = modpow(a,b/2);
+        return tmp*tmp%mod;
+    }else{
+        return modpow(a,b-1)*a%mod;
+    }
+
+}
+
+
 
 int main(void)
 {
     std::cin.tie(nullptr);
     std::ios::sync_with_stdio(false);
-    
-    
-
-
-
+   
     return 0;
 }
