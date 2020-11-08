@@ -19,7 +19,7 @@ using ll = long long;
 const ll INF = 1e18;
 const double PI = acos(-1);
 
-const ll mod = 1e9 + 7;
+const ll mod = 1e9 + 7; //998244353;
 
 template<class T> inline bool chmin(T& a, T b) {
     if (a > b) {
