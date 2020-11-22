@@ -21,4 +21,6 @@ struct UnionFind{
     int size(int x){
         return -d[find(x)];
     }
+    int operator[](int x){return find(x);}
+    int operator()(int x){return size(x);}
 };
