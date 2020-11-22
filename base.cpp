@@ -6,12 +6,18 @@
 #define vvi vector<vector<int>>
 #define vl vector<ll>
 #define vvl vector<vecctor<ll>>
-#define vp vector<pair<ll,ll>>
+#define vvp vector<vector<pair<ll,ll>>>
+#define vpl vector<pair<ll,ll>>
+#define vpi vector<pair<int,int>>
 #define pb push_back
 #define se second
 #define fi first
 #define all(v) v.begin(),v.end()
+#define v(T) vector<T>
+#define vv(T) vector<vector<T>>
 
+template<typename T>istream& operator>>(istream&i,v(T)&v){rep(j,v.size())i>>v[j];return 1;}
+template<typename T>ostream& operator<<(ostream&o,const v(T)&v){if(sz(v))o<<join(v);return o;}
 
 
 using namespace std;
@@ -56,6 +62,6 @@ int main(void)
 {
     std::cin.tie(nullptr);
     std::ios::sync_with_stdio(false);
-   
+    
     return 0;
 }
