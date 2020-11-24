@@ -16,11 +16,14 @@
 #define v(T) vector<T>
 #define vv(T) vector<vector<T>>
 
-template<typename T>istream& operator>>(istream&i,v(T)&v){rep(j,v.size())i>>v[j];return 1;}
-template<typename T>ostream& operator<<(ostream&o,const v(T)&v){if(sz(v))o<<join(v);return o;}
-
-
 using namespace std;
+
+template<typename T> istream& operator>>(istream&i,v(T)&v){rep(j,v.size())i>>v[j];return i;}
+template<typename T> string join(const v(T)&v){stringstream s;rep(i,v.size())s<<' '<<v[i];return s.str().substr(1);}
+template<typename T> ostream& operator<<(ostream&o,const v(T)&v){if(v.size())o<<join(v);return o;}
+
+
+
 using ll = long long;
 const ll INF = 1e18;
 const double PI = acos(-1);
