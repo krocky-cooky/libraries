@@ -5,7 +5,7 @@
 #define vi vector<int>
 #define vvi vector<vector<int>>
 #define vl vector<ll>
-#define vvl vector<vecctor<ll>>
+#define vvl vector<vector<ll>>
 #define vvp vector<vector<pair<ll,ll>>>
 #define vpl vector<pair<ll,ll>>
 #define vpi vector<pair<int,int>>
