@@ -25,7 +25,7 @@ template<typename T> ostream& operator<<(ostream&o,const v(T)&v){if(v.size())o<<
 
 
 using ll = long long;
-const ll INF = 1e18;
+const ll INF = LLONG_MAX;
 const double PI = acos(-1);
 
 const ll mod = 1e9 + 7; //998244353;
