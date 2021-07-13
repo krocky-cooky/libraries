@@ -41,7 +41,7 @@ struct StronglyConnectedComponents{
         rep(i,n){
             for(ll to : g[i]){
                 ll s = comp[to],t = comp[i];
-                if(s != i)ret[i].pb(s);
+                if(s != t)ret[t].pb(s);
             }
         }
 
