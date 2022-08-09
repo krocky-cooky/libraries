@@ -44,9 +44,10 @@ struct combination{
         for(int i = n; i >= 1; --i){
             ifact[i-1] = ifact[i]*i;
         }
-        mint operator(int n, int k){
-            if( k < 0 || k > n) return 0;
-            return fact[n]*fact[k]*ifact[n-k];
-        }
     }
-}
+    mint operator()(int n, int k){
+        if( k < 0 || k > n) return 0;
+        return fact[n]*ifact[k]*ifact[n-k];
+    }
+    
+};
